@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 627979495}
   - component: {fileID: 627979500}
   - component: {fileID: 627979499}
-  - component: {fileID: 627979498}
   - component: {fileID: 627979497}
+  - component: {fileID: 627979501}
   m_Layer: 0
   m_Name: ArborFSM
   m_TagString: Untagged
@@ -207,7 +207,7 @@ MonoBehaviour:
     _IsSettedName: 1
     _Resident: 0
     _Behaviours:
-    - {fileID: 627979498}
+    - {fileID: 627979501}
     _BreakPoint: 0
   - _NodeGraph: {fileID: 627979495}
     _NodeID: 1655911537
@@ -259,23 +259,12 @@ MonoBehaviour:
   _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
---- !u!114 &627979498
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627979494}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b35b69794898944fab6b359e1679ba08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _NodeGraph: {fileID: 627979495}
-  _NodeID: 534011718
-  _DataSlotFieldLinks: []
-  expanded: 1
-  _BehaviourEnabled: 1
+  _nextState:
+    name: 
+    _StateID: 534011718
+    transitionTiming: 4
+    _LineColorChanged: 0
+    _LineColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &627979499
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -342,13 +331,30 @@ MonoBehaviour:
       branchID: 0
   _NextState:
     name: 
-    _StateID: 534011718
+    _StateID: 1655911537
     transitionTiming: 4
     _LineColorChanged: 0
     _LineColor: {r: 1, g: 1, b: 1, a: 1}
   _SerializeVersion: 2
   _OldSeconds: 0
   _OldTimeType: 0
+--- !u!114 &627979501
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627979494}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36870523fab494cf395bb4975f899762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 627979495}
+  _NodeID: 534011718
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
 --- !u!1 &2114893108
 GameObject:
   m_ObjectHideFlags: 0
